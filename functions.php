@@ -159,4 +159,9 @@ require get_template_directory() . '/inc/custom_post_type.php';
  */
 // Подключаем файл который содержит в себе функции добавления custom taxonomy
 require get_template_directory() . '/inc/custom_taxonomy.php';
+/**
+ * Add custom widget
+ */
+// Подключаем файл который содержит в себе функции добавления custom widget
+require get_template_directory() . '/inc/custom_widget.php';
 
