@@ -154,5 +154,9 @@ add_action( 'wp_enqueue_scripts', 'halyava_scripts' );
  */
 // Подключаем файл который содержит в себе функции добавления custom post type
 require get_template_directory() . '/inc/custom_post_type.php';
-
+/**
+ * Add custom taxonomy
+ */
+// Подключаем файл который содержит в себе функции добавления custom taxonomy
+require get_template_directory() . '/inc/custom_taxonomy.php';
 
