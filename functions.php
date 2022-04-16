@@ -150,29 +150,9 @@ function halyava_scripts() {
 add_action( 'wp_enqueue_scripts', 'halyava_scripts' );
 
 /**
- * Implement the Custom Header feature.
+ * Add custom post type file
  */
-require get_template_directory() . '/inc/custom-header.php';
+// Подключаем файл который содержит в себе функции добавления custom post type
+require get_template_directory() . '/inc/custom_post_type.php';
 
-/**
- * Custom template tags for this theme.
- */
-require get_template_directory() . '/inc/template-tags.php';
-
-/**
- * Functions which enhance the theme by hooking into WordPress.
- */
-require get_template_directory() . '/inc/template-functions.php';
-
-/**
- * Customizer additions.
- */
-require get_template_directory() . '/inc/customizer.php';
-
-/**
- * Load Jetpack compatibility file.
- */
-if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/inc/jetpack.php';
-}
 
